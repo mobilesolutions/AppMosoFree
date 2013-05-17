@@ -51,7 +51,7 @@ var vOperadora = "";
 			//alert(ArrayCadena[3]);
 			stringActivacion = ArrayCadena[3]
 			ArrayActivacion = stringActivacion.split(":");
-			
+			alert(ArrayActivacion[1]);
 			if(ArrayActivacion[1].trim() == "1")
 				vActivacion = 1;
 				

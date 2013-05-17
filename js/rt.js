@@ -79,6 +79,7 @@ function getDescarga(){
                     evento.preventDefault();
                		if(vActivacion==1){
 						codigo = $(this).attr("id");
+						alert("http://bip.pe/pe/mo/wap/ft/validacionDescargaSmart.php?nue=" + vNumUser + "&c=" + codigo);
 						$.getJSON("http://bip.pe/pe/mo/wap/ft/validacionDescargaSmart.php?nue=" + vNumUser + "&c=" + codigo, function (data) {
 				 			alert(data);					 
 				  		});			   
