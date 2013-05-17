@@ -71,11 +71,19 @@ function getCanciones() {
 }
 
 function getDescarga(){
-	$(".servicios ul li").each(function() {
+	$("#canciones ul li").each(function() {
 
                 $(this).click(function(evento) {
                     evento.preventDefault();
-               		alert(vActivacion);
+               		if(vActivacion==1){
+						codigo = $(this).attr("id");
+						$.getJSON("http://bip.pe/pe/mo/wap/ft/validacionDescargaSmart.php?nue=" + vNumUser + "&c=" + codigo, function (data) {
+				 			alert(data);					 
+				  		});			   
+					}
+					else{
+						alert("Activacion: Configurar tu cuenta en la opcion de Mi Perfil");
+					}
 			  
                 });
             });
