@@ -46,7 +46,7 @@ var vOperadora = "";
 			var cadena = evt.target.result;
 			cadena = cadena.replace("{","");
 			cadena = cadena.replace("}","");
-			//alert(cadena);
+			alert(cadena);
 			ArrayCadena = cadena.split(",");
 			//alert(ArrayCadena[3]);
 			stringActivacion = ArrayCadena[3]
