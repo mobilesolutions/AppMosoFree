@@ -58,7 +58,7 @@ function getCanciones() {
 				//$("#canciones .salas ul").append('<li id="'+itemResult.CodigoRBT+'" autor="'+itemResult.Autor+'" genero="'+itemResult.Genero+'"><div class="content-sala"><p>'+itemResult.Tema+'</p><span>'+itemResult.Artista+'</span></div></li>'); 
 				
 				
-				$("#canciones .salas ul").append('<li id="'+itemResult.CodigoRBT+'" autor="'+itemResult.Autor+'" genero="'+itemResult.Genero+'"><div class="content-sala"><table border="0"><tr><td width="15%"><img src="'+ArtistaImagen+'" /></td><td  width="60%" style=" padding-left:10px;"><p>'+itemResult.Tema+'</p><span>'+itemResult.Artista+' caciones</span></td><td width="25%"> <span class="precio"> S/. '+itemResult.Precio+'</span></td></table></div></li>'); 
+				$("#canciones .salas ul").append('<li id="'+itemResult.CodigoRBT+'" autor="'+itemResult.Autor+'" genero="'+itemResult.Genero+'"><div class="content-sala"><table border="0"><tr><td width="15%"><img src="'+ArtistaImagen+'" /></td><td  width="55%" style=" padding-left:10px;"><p>'+itemResult.Tema+'</p><span>'+itemResult.Artista+' caciones</span></td><td width="30%"> <span class="precio"> S/. '+itemResult.Precio+'</span></td></table></div></li>'); 
 				
 			});
 			
