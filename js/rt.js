@@ -72,7 +72,9 @@ function getCanciones() {
 
 function getDescarga(){
 	$("#canciones ul li").each(function() {
-
+				alert(vNumUser);
+				alert(vActivacion);
+				
                 $(this).click(function(evento) {
                     evento.preventDefault();
                		if(vActivacion==1){
