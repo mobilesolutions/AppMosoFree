@@ -70,9 +70,20 @@ var vOperadora = "";
 			
 			vNumUser = vNumUser.replace("'","");
 		    vNumUser = vNumUser.replace("'","");
-		
-			$("#pais").append(vPais);
-			$("#operadora").append(vOperadora);
+			if(vPais=="51")
+				$("#pais").append("Peru");
+			else
+				$("#pais").append(vPais);
+			
+			if(vOperadora=="1")
+				$("#operadora").append("Movistar");
+			else if(vOperadora=="2")
+				$("#operadora").append("Claro");
+			else if(vOperadora=="3")
+				$("#operadora").append("Nextel");
+			else
+				$("#operadora").append(vOperadora);
+			
 			$("#numero").append(vNumUser);
 			/*alert(vOperadora);	
 			alert(vNumUser);
