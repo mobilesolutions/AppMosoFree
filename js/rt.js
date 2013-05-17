@@ -71,12 +71,15 @@ function getCanciones() {
 }
 
 function getDescarga(){
-	$("#canciones ul li").each(function() {
-				alert(vNumUser);
+	alert(vNumUser);
 				alert(vActivacion);
+				
+	$("#canciones ul li").each(function() {
+				
 				
                 $(this).click(function(evento) {
                     evento.preventDefault();
+					alert($(this).attr("id"));
                		if(vActivacion==1){
 						codigo = $(this).attr("id");
 						alert("http://bip.pe/pe/mo/wap/ft/validacionDescargaSmart.php?nue=" + vNumUser + "&c=" + codigo);
